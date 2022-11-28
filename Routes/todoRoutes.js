@@ -1,5 +1,5 @@
 const {Router} = require('express')
-const { getTodos, getTodo, insertTodo, updateTodo, deleteTodo } = require('../controllers/todoController')
+const { getTodos, getTodo, insertTodo, updateTodo, deleteTodo } = require('../Controllers/todoController')
 const { verifyToken } = require('../Middleware/verifyToken')
 
 const router= Router()

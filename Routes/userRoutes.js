@@ -1,5 +1,5 @@
 const { Router} = require('express')
-const { signupUser, loginUser, homepage } = require('../controllers/userController')
+const { signupUser, loginUser, homepage } = require('../Controllers/userController')
 const { verifyToken } = require('../Middleware/verifyToken')
 
 const userRoutes= Router()

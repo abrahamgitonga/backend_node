@@ -35,12 +35,12 @@ dotenv.config()
           if(checkPassword){
             const {password, id ,...payload}=user
             const token = jwt.sign(payload,process.env.SECRET, {expiresIn:'120s'})
-            return res.status(200).json({message:'Logged in !!',token})
+            return res.status(200).json({message:'Logged in!',token})
           }else{
-           return res.status(400).json({message:"User Not Found"})
+           return res.status(400).json({message:"User Not Found!"})
           }
         }else{
-            return res.status(400).json({message:"User Not Found"})
+            return res.status(400).json({message:"User Not Found!"})
         }
         
     } catch (error) {
