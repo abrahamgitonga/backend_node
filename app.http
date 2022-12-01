@@ -1,24 +1,25 @@
 
 
-GET http://localhost:8080/todos
-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG5kb2VAZ21haWwuY29tIiwidXNlcm5hbWUiOiJqb2huIGRvZSIsImlhdCI6MTY2OTY0MzUyMSwiZXhwIjoxNjY5NjQzNjQxfQ.bmCh-qqrYAA5Gsv-fhnya1rYqqXAH6hOq8K4YeNI6KI
+GET http://localhost:4000/todos
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbGxvbWlAZ21haWwuY29tIiwidXNlcm5hbWUiOiIga2lsbG8gbWkgZG9lIiwiaWF0IjoxNjY5ODgyMDQyLCJleHAiOjE2Njk4ODIxNjJ9.x5UpVlmIQaJGZn5j5bVsj0hI29Znoyus3RzbqNVRhIM
 
 ###
 GET http://localhost:4000/todos
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbGxvQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiIGpvaG4gZG9lIiwiaWF0IjoxNjY5ODc5MjM0LCJleHAiOjE2NzEwODUxMzR9.xP5txhITwmJHa6cbJ5TRZhIfMsPOm_3ewpVnPiRA0hI
 ###
-POST http://localhost:8080/todos
-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG5kb2VAZ21haWwuY29tIiwidXNlcm5hbWUiOiJqb2huIGRvZSIsImlhdCI6MTY2OTY0MzUyMSwiZXhwIjoxNjY5NjQzNjQxfQ.bmCh-qqrYAA5Gsv-fhnya1rYqqXAH6hOq8K4YeNI6KI
+POST http://localhost:4000/todos
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbGxvQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiIGpvaG4gZG9lIiwiaWF0IjoxNjY5ODc5MjM0LCJleHAiOjE2NzEwODUxMzR9.xP5txhITwmJHa6cbJ5TRZhIfMsPOm_3ewpVnPiRA0hI
 Content-Type: application/json
 
 {
-    "title":"Code",
-    "description":"intergrate frontend to backend",
-    "date":"2022-11-28"
+    "title":"Coders nation summit",
+    "description":"frontend to backend",
+    "date":"2022-12-1"
 }
 
 
 ###
-PUT http://localhost:4000/todos/sdfhdhdhvjfdhn
+PUT http://localhost:4000/todos
 Content-Type: application/json
 
 {
@@ -33,26 +34,27 @@ DELETE http://localhost:4000/todos/c566beff-0eee-4350-b9d9-037c9b1f762b
 
 
 ###
-POST http://localhost:8080/user/signup
+POST http://localhost:4000/user/signup
 Content-Type: application/json
 
 {
-    "username":"john doe",
-    "email":"johndoe@gmail.com",
+    "username":" killo mi doe",
+    "email":"killomi@gmail.com",
     "password":"12345678"
 }
 
 
 ###
-POST http://localhost:8080/user/login
+POST http://localhost:4000/user/login
 Content-Type: application/json
 
 {
-    "email":"johndoe@gmail.com",
+    "email":"killomi@gmail.com",
     "password":"12345678"
 }
 
 
 ###
 
-GET http://localhost:8080/user/home
+GET http://localhost:4000/user/home
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbGxvQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiIGpvaG4gZG9lIiwiaWF0IjoxNjY5ODc5MjM0LCJleHAiOjE2NzEwODUxMzR9.xP5txhITwmJHa6cbJ5TRZhIfMsPOm_3ewpVnPiRA0hI
